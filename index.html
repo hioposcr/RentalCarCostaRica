@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costa RiCars Renting</title>
+    <link rel="icon" href="images/renta.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- font-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+</head>
+
+<body>
+    <!-- header section starts -->
+    <a href="https://api.whatsapp.com/send?phone=71987667" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#home" class="logo">
+            <img src="images/logoPagina.png" alt="Cars4U" />
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#services">Services</a>
+            <a href="#featured">Featured</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="login-btn" style="visibility: hidden;">
+            <button class="btn">login</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- login -->
+
+    <div class="login-form-container">
+        <span class="fas fa-times" id="close-login-form"></span>
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box" />
+            <input type="password" placeholder="password" class="box" />
+            <p>Forgot your password <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn" />
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account <a href="#">create an account</a></p>
+        </form>
+    </div>
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="carousel">
+            <!-- list item -->
+            <div class="list">
+                <div class="item">
+                    <img src="images/drone-tours.jpg" />
+                    <div class="content">
+                        <div class="author">In Guanacaste</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            From the beaches to the mountains, our car rental service takes
+                            you wherever you want to go in Costa Rica.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/jake-marsee.jpg" />
+                    <div class="content">
+                        <div class="author">In Sámara</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Book now and enjoy the comfort and flexibility of having your
+                            own means of transportation in Costa Rica.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/tanabene.jpg" />
+                    <div class="content">
+                        <div class="author">In Puerto Limon</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Your gateway to exploration: Rent a car with us and discover all
+                            that Costa Rica has to offer.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/water-fall.jpg" />
+                    <div class="content">
+                        <div class="author">In Sarapiquí</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            <!-- lorem 50 -->
+                            Discover the beauty of Costa Rica at the wheel of one of our
+                            rental cars.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- list thumnail -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="images/drone-tours.jpg" />
+                    <div class="content">
+                        <div class="title">Liberia</div>
+                        <div class="description">Guanacaste</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/jake-marsee.jpg" />
+                    <div class="content">
+                        <div class="title">Sámara</div>
+                        <div class="description">Guanacaste</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/tanabene.jpg" />
+                    <div class="content">
+                        <div class="title">Puerto</div>
+                        <div class="description">Limon</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/water-fall.jpg" />
+                    <div class="content">
+                        <div class="title">Horquetas</div>
+                        <div class="description">Sarapiquí</div>
+                    </div>
+                </div>
+            </div>
+            <!-- next prev -->
+
+            <div class="arrows">
+                <button id="prev">
+                    <</button>
+                        <button id="next">></button>
+            </div>
+            <!-- time running -->
+            <div class="time"></div>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- icons section starts -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>3+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>5000+</h3>
+                <p>cars ordered</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>600+</h3>
+                <p>happy customers</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>5+</h3>
+                <p>new cars</p>
+            </div>
+        </div>
+    </section>
+    <!-- icons section ends -->
+
+    <!-- vehicles section starts -->
+
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading">Popular <span>vehicles</span></h1>
+        <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+                <!-- Carro 1 -->
+                <div class="swiper-slide box">
+                    <img src="./images/car-5.png" alt="vehicle1" />
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>price: </span> $110,00/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#vehicles" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">check out</a>
+                    </div>
+                </div>
+                <!-- Carro 2 -->
+                <div class="swiper-slide box">
+                    <img src="./images/car-3.png" alt="vehicle2" />
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>price: </span> $90,00/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#vehicles" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle-3.png" alt="vehicle3" />
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>price: </span> $110,00/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automatic
+                            <span class="fas fa-circle"></span> petrol
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#vehicles" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">check out</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="googleForm" src="https://forms.gle/5xh8joHkFwWrzpWp7" width="100%" height="100%" frameborder="0"
+                marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+    </div>
+
+    <!-- vehicles section ends -->
+
+    <!-- services section starts -->
+
+    <section class="services" id="services">
+        <h1 class="heading">our <span>services</span></h1>
+
+        <div class="box-container">
+            <div class="swiper-slides box">
+                <i class="fas fa-car"></i>
+                <h3>Car Rentals</h3>
+                <p>
+                    Discover our wide range of vehicles available for rent. From compact
+                    cars to spacious SUVs, we have the perfect vehicle for your needs.
+                </p>
+                <a href="#" class="btn">explore more</a>
+            </div>
+
+            <div class="swiper-slides box">
+                <i class="fas fa-tools"></i>
+                <h3>Vehicle Maintenance</h3>
+                <p>
+                    Keep your vehicle in top condition with our expert maintenance
+                    services. From routine oil changes to major repairs, our skilled
+                    technicians have you covered.
+                </p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+
+            <div class="swiper-slides box">
+                <i class="fas fa-headset"></i>
+                <h3>Customer Support</h3>
+                <p>
+                    Need assistance? Our dedicated support team is available 24/7 to
+                    answer your questions and address any concerns you may have. Your
+                    satisfaction is our top priority.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=71987667" class="btn">get support</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- services section ends -->
+
+    <!-- featured section starts -->
+
+    <section class="featured" id="featured">
+        <h1 class="heading"><span>featured</span> cars</h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./images/vehicle-6.png" alt="car1" />
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$110,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">Rent</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car-2.png" alt="car2" />
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$90,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">Rent</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car-7.png" alt="car3" />
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$110,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">Rent</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car-6.png" alt="car6" />
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$100,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">Rent</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/car-8.png" alt="car7" />
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$100,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()" style="background-color: darkturquoise; color: black; font-size: medium;">Rent</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- featured section ends -->
+
+    <!-- newsletter section starts -->
+
+    <div class="newsletter">
+        <h3>Subscribe now to stay up to date!</h3>
+        <p>
+            By subscribing, you will receive exclusive news, special offers and
+            updates about our services directly to your inbox.
+        </p>
+        <form action="">
+            <input type="email" placeholder="enter your email" name="" id="" />
+            <input type="submit" class="subscribe" name="" id="" />
+        </form>
+    </div>
+
+    <!-- newsletter section starts -->
+
+    <!-- review section starts -->
+
+    <section class="reviews" id="reviews">
+        <h1 class="heading">client's <span>review</span></h1>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="./images/pic-1.png" alt="pic1" />
+                    <div class="content">
+                        <p>
+                            Excellent car rental experience! The online booking process was
+                            smooth, and the car was clean and well-maintained. The staff at
+                            the counter provided great service, making the pickup and
+                            drop-off hassle-free. Will definitely use this service again!
+                        </p>
+                        <h3>Frank Herrera</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-2.png" alt="pic2" />
+                    <div class="content">
+                        <p>
+                            Fantastic service! Booking the car online was a breeze, and the
+                            vehicle exceeded my expectations. The pickup process was quick,
+                            and the staff was friendly and helpful. Highly recommend this
+                            car rental company for your next trip.
+                        </p>
+                        <h3>ash hampton</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-3.png" alt="pic3" />
+                    <div class="content">
+                        <p>
+                            I had a wonderful experience with this car rental company. The
+                            reservation process was simple, and the car was in excellent
+                            condition. The staff was courteous and professional, making the
+                            entire rental process seamless. Will definitely be a returning
+                            customer!
+                        </p>
+                        <h3>ryan apple</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-4.png" alt="pic4" />
+                    <div class="content">
+                        <p>
+                            Great service all around! The online booking system was
+                            user-friendly, and the car was clean and comfortable. The staff
+                            at the rental location were efficient and accommodating,
+                            ensuring a smooth experience from start to finish. Highly
+                            recommend!
+                        </p>
+                        <h3>selena newman</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-5.png" alt="pic5" />
+                    <div class="content">
+                        <p>
+                            I was thoroughly impressed with the service provided by this car
+                            rental company. The reservation process was easy, and the car
+                            was in perfect condition. The staff was friendly and helpful,
+                            making the entire experience stress-free. Will definitely use
+                            this service again!
+                        </p>
+                        <h3>edwin barton</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="./images/pic-6.png" alt="pic6" />
+                    <div class="content">
+                        <p>
+                            Exceptional service! Booking the car online was quick and
+                            convenient, and the pickup process was efficient. The car was
+                            exactly as described, and the staff was courteous and
+                            professional throughout. Would definitely recommend this car
+                            rental company to others.
+                        </p>
+                        <h3>kay floyd</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- review section ends -->
+    <section class="faq" id="faq">
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">FAQ</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What are the requirements for renting a car?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The main requirements include having a valid driver's license, a credit card for the
+                            security deposit,
+                            and meeting the minimum age requirement for renting a car, which is usually 21 years old.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What type of insurance does the company offer?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We offer various types of insurance, which may include basic liability coverage, collision
+                            coverage,
+                            and theft coverage. You can consult with our team for more details on available insurance
+                            options.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Is it possible to rent a car for driving outside of Costa Rica?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Yes, it is possible to rent a car for driving outside of Costa Rica, but you must inform us
+                            in advance to
+                            ensure that your insurance has the appropriate coverage and to obtain necessary documents,
+                            such as an
+                            international driver's permit if required.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            What is the vehicle return process?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The return process is simple. Just bring the car back to our designated location on the
+                            agreed date and
+                            time. We will conduct a vehicle inspection and process any additional charges, such as
+                            missing fuel or
+                            damages not covered by insurance.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Is smoking allowed in rental vehicles?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No, to maintain our vehicles in the best condition for all customers, smoking is not allowed
+                            in rental
+                            cars. Additional cleaning charges may apply in case of smoking in the vehicle.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            What should I do in case of an accident or breakdown?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            In case of an accident or breakdown, first ensure your safety and that of others. Call our
+                            provided
+                            emergency number, and we will follow necessary instructions, which may include roadside
+                            assistance and
+                            coordination with local authorities if needed.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contact</span> us</h1>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.2261935774222!2d-84.20733542403188!3d9.998165690107145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c450507873%3A0xb27b62220e3f31a4!2sAeropuerto%20Internacional%20Juan%20Santamar%C3%ADa%2C%20San%20Jose!5e0!3m2!1ses!2scr!4v1707583686556!5m2!1ses!2scr"
+                allowfullscreen="" loading="lazy"></iframe>
+
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <h3>Need more information? Write to us!</h3>
+                <input type="hidden" name="access_key" value="62d05774-6b14-45c3-9ba8-43efe26fcfc4" />
+                <input type="text" name="name" placeholder="Name" class="box" />
+                <input type="email" name="email" placeholder="Email" class="box" />
+                <input type="number" name="phone" placeholder="Number" class="box" />
+                <textarea placeholder="Message" name="message" class="box" cols="30" rows="10"></textarea>
+                <button type="submit" value="Send Message" class="btn"
+                    style="background-color: darkturquoise; color: black; font-size: medium;">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+
+        <footer class="new_footer_area bg_color">
+            <div class="dropdown" tab-index="0">
+                <button id="dropdown-btn"></button>
+                <ul class="dropdown-content" id="dropdown-content"></ul>
+            </div>
+            <div class="new_footer_top">
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- footer section ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="script.js"></script>
+
+    <!-- <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "es",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script> -->
+</body>
+
+</html>

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Costa RiCars Renting</title>
+    <link rel="icon" href="images/renta.png" type="image/png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <!-- font-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+</head>
+
+<body>
+    <!-- header section starts -->
+    <a href="https://api.whatsapp.com/send?phone=71987667" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+
+        <a href="#home" class="logo">
+            <img src="../images/logoPagina.png" alt="Cars4U" />
+        </a>
+        <nav class="navbar">
+            <a href="#home">Inicio</a>
+            <a href="#vehicles">Vehículos</a>
+            <a href="#services">Servicios</a>
+            <a href="#featured">Destacados</a>
+            <a href="#reviews">Reseñas</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+
+        <div id="login-btn" style="visibility: hidden;">
+            <button class="btn">Cambiar Idioma</button>
+            <i class="far fa-user"></i>
+        </div>
+    </header>
+
+
+    <!-- header section ends -->
+
+    <!-- login -->
+
+    <div class="login-form-container">
+        <span class="fas fa-times" id="close-login-form"></span>
+        <form action="">
+            <h3>user login</h3>
+            <input type="email" placeholder="email" class="box" />
+            <input type="password" placeholder="password" class="box" />
+            <p>Forgot your password <a href="#">click here</a></p>
+            <input type="submit" value="login now" class="btn" />
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account <a href="#">create an account</a></p>
+        </form>
+    </div>
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="carousel">
+            <!-- elemento de lista -->
+            <div class="list">
+                <div class="item">
+                    <img src="../images/drone-tours.jpg" />
+                    <div class="content">
+                        <div class="author">En Guanacaste</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            Desde las playas hasta las montañas, nuestro servicio de alquiler de coches te lleva a donde
+                            quieras ir en Costa Rica.
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/jake-marsee.jpg" />
+                    <div class="content">
+                        <div class="author">En Sámara</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            ¡Reserva ahora y disfruta de la comodidad y flexibilidad de tener tu propio medio de
+                            transporte en Costa Rica!
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/tanabene.jpg" />
+                    <div class="content">
+                        <div class="author">En Puerto Limón</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            Tu puerta de entrada a la exploración: ¡Alquila un coche con nosotros y descubre todo lo que
+                            Costa Rica tiene para ofrecer!
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/water-fall.jpg" />
+                    <div class="content">
+                        <div class="author">En Sarapiquí</div>
+                        <div class="title">Costa RiCars</div>
+                        <div class="topic">Renting</div>
+                        <div class="des">
+                            Descubre la belleza de Costa Rica al volante de uno de nuestros coches de alquiler.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- miniaturas -->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="../images/drone-tours.jpg" />
+                    <div class="content">
+                        <div class="title">Liberia</div>
+                        <div class="description">Guanacaste</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/jake-marsee.jpg" />
+                    <div class="content">
+                        <div class="title">Sámara</div>
+                        <div class="description">Guanacaste</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/tanabene.jpg" />
+                    <div class="content">
+                        <div class="title">Puerto</div>
+                        <div class="description">Limón</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../images/water-fall.jpg" />
+                    <div class="content">
+                        <div class="title">Horquetas</div>
+                        <div class="description">Sarapiquí</div>
+                    </div>
+                </div>
+            </div>
+            <!-- botones de navegación -->
+            <div class="arrows">
+                <button id="prev">
+                    <</button>
+                        <button id="next">></button>
+            </div>
+            <!-- tiempo -->
+            <div class="time"></div>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <section class="section_container booking_container">
+        <form
+          id="bookingForm"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="62d05774-6b14-45c3-9ba8-43efe26fcfc4"
+          />
+          <div class="form__group">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <select name="location">
+                  <option value="" selected disabled>Select location</option>
+                  <option value="San_Jose">
+                    Aeropuerto Internacional Juan Santamaría
+                  </option>
+                  <option value="Samara">Sámara, Provincia de Guanacaste.</option>
+                  <option value="Liberia">
+                    Liberia, Provincia de Guanacaste.
+                  </option>
+                  <!-- Agrega más opciones según necesites -->
+                </select>
+              </div>
+              <p>Where are you going?</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="datetime-local" name="pickup_datetime" />
+              </div>
+              <p>Add date and time</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-calendar-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <input type="datetime-local" name="dropoff_datetime" />
+              </div>
+              <p>Add date and time</p>
+            </div>
+          </div>
+          <div class="form__group">
+            <span><i class="ri-car-line"></i></span>
+            <div class="input__content">
+              <div class="input__group">
+                <select name="car">
+                  <option value="" selected disabled>Select a car</option>
+                  <option value="Soueast">Soueast DX7</option>
+                  <option value="Daihatsu">Daihatsu Terios Bego</option>
+                  <option value="Hyundai">Hyundai Tucson 2014</option>
+                  <option value="Hiunday">Hiunday Tucson 2012</option>
+                  <!-- Agrega más opciones según necesites -->
+                </select>
+              </div>
+              <p>Choose a car</p>
+            </div>
+          </div>
+  
+          <button type="submit" class="btn">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+      </section>
+      
+    <!-- icons section starts -->
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fas fa-home"></i>
+            <div class="content">
+                <h3>3+</h3>
+                <p>sucursales</p>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>5000+</h3>
+                <p>coches pedidos</p>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-users"></i>
+            <div class="content">
+                <h3>600+</h3>
+                <p>clientes satisfechos</p>
+            </div>
+        </div>
+    
+        <div class="icons">
+            <i class="fas fa-car"></i>
+            <div class="content">
+                <h3>5+</h3>
+                <p>coches nuevos</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- icons section ends -->
+
+    <!-- vehicles section starts -->
+
+    <section class="vehicles" id="vehicles">
+        <h1 class="heading">Vehículos <span>populares</span></h1>
+        <div class="swiper vehicles-slider">
+            <div class="swiper-wrapper">
+                <!-- Carro 1 -->
+                <div class="swiper-slide box">
+                    <img src=".././images/car-5.png" alt="vehículo1" />
+                    <div class="content">
+                        <h3>modelo nuevo</h3>
+                        <div class="price"><span>precio: </span> $110,00/-</div>
+                        <p>
+                            nuevo
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automático
+                            <span class="fas fa-circle"></span> gasolina
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#vehicles" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                    </div>
+                </div>
+                <!-- Carro 2 -->
+                <div class="swiper-slide box">
+                    <img src=".././images/car-3.png" alt="vehículo2" />
+                    <div class="content">
+                        <h3>modelo nuevo</h3>
+                        <div class="price"><span>precio: </span> $90,00/-</div>
+                        <p>
+                            nuevo
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automático
+                            <span class="fas fa-circle"></span> gasolina
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#vehicles" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src=".././images/vehicle-3.png" alt="vehículo3" />
+                    <div class="content">
+                        <h3>modelo nuevo</h3>
+                        <div class="price"><span>precio: </span> $110,00/-</div>
+                        <p>
+                            nuevo
+                            <span class="fas fa-circle"></span> 2021
+                            <span class="fas fa-circle"></span> automático
+                            <span class="fas fa-circle"></span> gasolina
+                            <span class="fas fa-circle"></span> 183mph
+                        </p>
+                        <a href="#vehicles" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <iframe id="googleForm" src="https://forms.gle/5xh8joHkFwWrzpWp7" width="100%" height="100%" frameborder="0"
+                marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+    </div>
+
+    <!-- vehicles section ends -->
+
+    <!-- services section starts -->
+
+    <section class="services" id="services">
+        <h1 class="heading">Nuestros <span>servicios</span></h1>
+    
+        <div class="box-container">
+            <div class="swiper-slides box">
+                <i class="fas fa-car"></i>
+                <h3>Alquiler de Coches</h3>
+                <p>
+                    Descubre nuestra amplia gama de vehículos disponibles para alquilar. Desde coches compactos hasta espaciosos SUVs, tenemos el vehículo perfecto para tus necesidades.
+                </p>
+                <a href="#" class="btn">explorar más</a>
+            </div>
+    
+            <div class="swiper-slides box">
+                <i class="fas fa-tools"></i>
+                <h3>Mantenimiento de Vehículos</h3>
+                <p>
+                    Mantén tu vehículo en óptimas condiciones con nuestros servicios de mantenimiento experto. Desde cambios de aceite de rutina hasta reparaciones importantes, nuestros técnicos capacitados te respaldan.
+                </p>
+                <a href="#" class="btn">saber más</a>
+            </div>
+    
+            <div class="swiper-slides box">
+                <i class="fas fa-headset"></i>
+                <h3>Soporte al Cliente</h3>
+                <p>
+                    ¿Necesitas ayuda? Nuestro equipo de soporte dedicado está disponible las 24 horas, los 7 días de la semana para responder a tus preguntas y abordar cualquier inquietud que puedas tener. Tu satisfacción es nuestra principal prioridad.
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=71987667" class="btn">obtener soporte</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- services section ends -->
+
+    <!-- featured section starts -->
+
+    <section class="featured" id="featured">
+        <h1 class="heading"><span>vehículos</span> destacados</h1>
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src=".././images/vehicle-6.png" alt="coche1" />
+                    <h3>modelo nuevo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$110,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src=".././images/car-2.png" alt="coche2" />
+                    <h3>modelo nuevo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$90,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src=".././images/car-7.png" alt="coche3" />
+                    <h3>modelo nuevo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$110,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src=".././images/car-6.png" alt="coche6" />
+                    <h3>modelo nuevo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">$100,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                </div>
+    
+                <div class="swiper-slide box">
+                    <img src=".././images/car-8.png" alt="coche7" />
+                    <h3>modelo nuevo</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$100,00/-</div>
+                    <a href="#" class="btn" onclick="openGoogleForm()"  style="background-color: darkturquoise; color: black; font-size: medium;">Alquilar</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    
+
+    <!-- featured section ends -->
+
+    <!-- newsletter section starts -->
+
+    <div class="newsletter">
+        <h3>¡Suscríbete ahora para mantenerte al día!</h3>
+        <p>
+            Al suscribirte, recibirás noticias exclusivas, ofertas especiales y
+            actualizaciones sobre nuestros servicios directamente en tu bandeja de entrada.
+        </p>
+        <form action="">
+            <input type="email" placeholder="Ingresa tu correo electrónico" name="" id="" />
+            <input type="submit" class="subscribe" name="" id="" />
+        </form>
+    </div>
+    
+
+    <!-- newsletter section starts -->
+
+    <!-- review section starts -->
+
+    <section class="reviews" id="reviews">
+        <h1 class="heading">Opinión del <span>Cliente</span></h1>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src=".././images/pic-1.png" alt="pic1" />
+                    <div class="content">
+                        <p>
+                            ¡Excelente experiencia de alquiler de coches! El proceso de reserva online fue sencillo y el coche estaba limpio y bien mantenido. El personal en el mostrador proporcionó un gran servicio, haciendo la recogida y recogida y entrega sin problemas. Sin duda volveré a utilizar este servicio.
+                        </p>
+                        <h3>Frank Herrera</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src=".././images/pic-2.png" alt="pic2" />
+                    <div class="content">
+                        <p>
+                            Un servicio fantástico. Reservar el coche online fue muy fácil, y el vehículo superó mis expectativas. El proceso de recogida fue rápido, y el personal amable y servicial. Recomiendo encarecidamente esta empresa de alquiler de coches para su próximo viaje.
+                        </p>
+                        <h3>ash hampton</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src=".././images/pic-3.png" alt="pic3" />
+                    <div class="content">
+                        <p>
+                            Tuve una experiencia maravillosa con esta empresa de alquiler de coches. El proceso de reserva fue sencillo y el coche estaba en excelente estado. El personal fue cortés y profesional, haciendo que todo el proceso de alquiler fuera perfecto. ¡Definitivamente seré un cliente recurrente!
+                        </p>
+                        <h3>ryan apple</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <img src=".././images/pic-4.png" alt="pic4" />
+                    <div class="content">
+                        <p>
+                            ¡Excelente servicio en general! El sistema de reserva en línea fue fácil de usar y el coche estaba limpio y cómodo. El personal en el lugar de alquiler fue eficiente y servicial, garantizando una experiencia sin problemas de principio a fin. ¡Muy recomendado!
+                        </p>
+                        <h3>selena newman</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <img src=".././images/pic-5.png" alt="pic5" />
+                    <div class="content">
+                        <p>
+                            Quedé completamente impresionado con el servicio proporcionado por esta empresa de alquiler de coches. El proceso de reserva fue fácil y el coche estaba en perfectas condiciones. El personal fue amable y servicial, haciendo que toda la experiencia fuera libre de estrés. ¡Definitivamente usaré este servicio nuevamente!
+                        </p>
+                        <h3>edwin barton</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide box">
+                    <img src=".././images/pic-6.png" alt="pic6" />
+                    <div class="content">
+                        <p>
+                            ¡Servicio excepcional! Reservar el coche en línea fue rápido y conveniente, y el proceso de recogida fue eficiente. El coche estaba exactamente como se describía, y el personal fue cortés y profesional en todo momento. Definitivamente recomendaría esta empresa de alquiler de coches a otros.
+                        </p>
+                        <h3>kay floyd</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- review section ends -->
+    <section class="faq" id="faq">
+        <div class="container mt-5">
+            <h1 class="text-center mb-4">Preguntas Frecuentes</h1>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuáles son los requisitos para alquilar un coche?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Los requisitos principales incluyen tener una licencia de conducir válida, una tarjeta de crédito para el depósito de seguridad y cumplir con el requisito de edad mínima para alquilar un coche, que suele ser de 21 años.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            ¿Qué tipo de seguro ofrece la empresa?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Ofrecemos varios tipos de seguros, que pueden incluir cobertura básica de responsabilidad, cobertura de colisión y cobertura contra robo. Puedes consultar con nuestro equipo para obtener más detalles sobre las opciones de seguro disponibles.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            ¿Es posible alquilar un coche para conducir fuera de Costa Rica?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Sí, es posible alquilar un coche para conducir fuera de Costa Rica, pero debes informarnos con anticipación para asegurarte de que tu seguro tenga la cobertura adecuada y obtener los documentos necesarios, como un permiso de conducir internacional si es necesario.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            ¿Cuál es el proceso de devolución del vehículo?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            El proceso de devolución es sencillo. Simplemente trae el coche de vuelta a nuestra ubicación designada en la fecha y hora acordadas. Realizaremos una inspección del vehículo y procesaremos cualquier cargo adicional, como combustible faltante o daños no cubiertos por el seguro.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            ¿Está permitido fumar en los vehículos de alquiler?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            No, para mantener nuestros vehículos en las mejores condiciones para todos los clientes, no se permite fumar en los coches de alquiler. Pueden aplicarse cargos adicionales de limpieza en caso de fumar en el vehículo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            ¿Qué debo hacer en caso de un accidente o avería?
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            En caso de un accidente o avería, primero asegura tu seguridad y la de los demás. Llama a nuestro número de emergencia proporcionado y seguiremos las instrucciones necesarias, que pueden incluir asistencia en carretera y coordinación con las autoridades locales si es necesario.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>contáctanos</span></h1>
+        <div class="row">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.2261935774222!2d-84.20733542403188!3d9.998165690107145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9c450507873%3A0xb27b62220e3f31a4!2sAeropuerto%20Internacional%20Juan%20Santamar%C3%ADa%2C%20San%20Jose!5e0!3m2!1ses!2scr!4v1707583686556!5m2!1ses!2scr"
+                allowfullscreen="" loading="lazy"></iframe>
+
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                <h3>¿Necesitas más información? ¡Escríbenos!</h3>
+                <input type="hidden" name="access_key" value="62d05774-6b14-45c3-9ba8-43efe26fcfc4" />
+                <input type="text" name="name" placeholder="Nombre" class="box" />
+                <input type="email" name="email" placeholder="Correo electrónico" class="box" />
+                <input type="number" name="phone" placeholder="Número" class="box" />
+                <textarea placeholder="Mensaje" name="message" class="box" cols="30" rows="10"></textarea>
+                <button type="submit" value="Send Message" class="btn"
+                    style="background-color: darkturquoise; color: black; font-size: medium;">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts -->
+
+    <section class="footer">
+        <footer class="new_footer_area bg_color">
+            <div class="dropdown" tab-index="0">
+                <button id="dropdown-btn"></button>
+                <ul class="dropdown-content" id="dropdown-content"></ul>
+            </div>
+            <div class="new_footer_top">
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <!-- footer section ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../script.js"></script>
+
+    <!-- <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          {
+            pageLanguage: "en",
+            includedLanguages: "es",
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+          },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script> -->
+</body>
+
+</html>
